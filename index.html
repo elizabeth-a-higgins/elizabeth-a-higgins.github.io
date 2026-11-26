@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Elizabeth A. Higgins</title>
+  <meta name="description" content="Elizabeth A. Higgins — Industrial Engineering M.S. student at the University of Washington working in human factors, healthcare systems, and research.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="index.html">Elizabeth <span class="full">A.&nbsp;</span>Higgins</a>
+    <nav class="nav">
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="resume.html">Resume</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="container">
+      <div>
+        <div class="eyebrow">Industrial Engineering · Human Factors</div>
+        <h1>Hi, I'm Elizabeth.</h1>
+        <p class="lede">
+          I'm an industrial engineering master's student at the University of Washington exploring
+          how humans interact with systems and technology, and how to make that interaction as seamless
+          as possible across healthcare, corporate, and research settings.
+        </p>
+        <ul class="chips" aria-label="Areas of interest">
+          <li>Human factors</li>
+          <li>Wearable sensors</li>
+          <li>Healthcare systems</li>
+          <li>User research</li>
+          <li>Interface design</li>
+        </ul>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="#work">See my work</a>
+          <a class="btn btn-ghost" href="resume.html">View resume</a>
+        </div>
+      </div>
+      <div>
+        <!-- To add a photo: put headshot.jpg in assets/images/ and replace the div below with:
+             <img class="headshot" src="assets/images/headshot.jpg" alt="Elizabeth Higgins"> -->
+        <div class="headshot placeholder" aria-hidden="true">EH</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WORK CARDS ============ -->
+  <section id="work">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">Research &amp; Projects</div>
+          <h2>Selected work</h2>
+        </div>
+        <div class="filters" role="group" aria-label="Filter work">
+          <button type="button" data-filter="all" aria-pressed="true">All</button>
+          <button type="button" data-filter="research" aria-pressed="false">Research</button>
+          <button type="button" data-filter="project" aria-pressed="false">Projects</button>
+        </div>
+      </div>
+
+      <div class="cards">
+
+        <!-- Research: Vigilance -->
+        <a class="card" data-type="research" href="projects/vigilance.html">
+          <div class="card-media">
+            <!-- Replace this svg with <img src="assets/images/vigilance.jpg" alt=""> -->
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>
+          </div>
+          <div class="card-body">
+            <div class="card-meta"><span class="tag">Research</span><span>Sep 2023 – Present</span></div>
+            <h3>Predicting Vigilance in Medical Residents</h3>
+            <p>Using eye-tracking and wearable sensor data to model how residents' sustained attention changes with sleep, and building a dynamic Bayesian network to predict it.</p>
+            <span class="more">Read more →</span>
+          </div>
+        </a>
+
+        <!-- Research: Publication -->
+        <a class="card" data-type="research" href="https://doi.org/10.1177/10711813241278279" target="_blank" rel="noopener">
+          <div class="card-media">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/><path d="M9 7h7M9 11h7"/></svg>
+          </div>
+          <div class="card-body">
+            <div class="card-meta"><span class="tag">Publication</span><span>HFES 2024</span></div>
+            <h3>Modeling Sensor-Based Vigilance Decrement in the Healthcare Environment</h3>
+            <p>Li, J., Kettel, V., <strong>Higgins, E. A.</strong>, Xiao, C., Kwon, Y., Meno, M., Roach, V. A., &amp; Kim, J.-E. <em>Proceedings of the HFES Annual Meeting.</em></p>
+            <span class="more">Read paper ↗</span>
+          </div>
+        </a>
+
+        <!-- Project: Airlift Northwest -->
+        <a class="card" data-type="project" href="projects/airlift-northwest.html">
+          <div class="card-media">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 21h8M12 17v4"/><path d="M8 3h8l-1 6a3 3 0 0 1-6 0z"/><path d="M12 12v5"/><path d="M5 9h14"/></svg>
+          </div>
+          <div class="card-body">
+            <div class="card-meta"><span class="tag">Capstone · 1st Place</span><span>Winter – Spring 2025</span></div>
+            <h3>Blood Management &amp; Tracking for Airlift Northwest</h3>
+            <p>Designed and user tested a digital blood-logging prototype for flight nurses that made logging 71% faster and could save over $100,000 per year.</p>
+            <span class="more">Read more →</span>
+          </div>
+        </a>
+
+        <!-- Project: Seattle Children's -->
+        <a class="card" data-type="project" href="projects/seattle-childrens.html">
+          <div class="card-media">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 4v16"/></svg>
+          </div>
+          <div class="card-body">
+            <div class="card-meta"><span class="tag">Internship</span><span>Summer 2025</span></div>
+            <h3>Project Management Toolkit at Seattle Children's</h3>
+            <p>Built a beginner-friendly toolkit of project management templates for the People &amp; Culture division, shaped by interviews with staff.</p>
+            <span class="more">Read more →</span>
+          </div>
+        </a>
+
+        <!-- Project: Starbucks data viz (card only, no detail page yet) -->
+        <div class="card" data-type="project">
+          <div class="card-media">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 5-6"/></svg>
+          </div>
+          <div class="card-body">
+            <div class="card-meta"><span class="tag">UI Design</span><span>Mar – Jun 2025</span></div>
+            <h3>Store Data Visualization Interface for Starbucks</h3>
+            <p>With UW's Behavioral Research in Information and Computer Security Lab, I ran user interviews and testing and prototyped interfaces that make store data easy to access for analysis.</p>
+          </div>
+        </div>
+
+        <!-- Project: Inventory software usability (card only) -->
+        <div class="card" data-type="project">
+          <div class="card-media">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 8l-9-5-9 5 9 5 9-5z"/><path d="M3 8v8l9 5 9-5V8"/><path d="M12 13v8"/></svg>
+          </div>
+          <div class="card-body">
+            <div class="card-meta"><span class="tag">Usability</span></div>
+            <h3>Usability Analysis of Inventory Management Software</h3>
+            <p>Evaluated five inventory management tools for features and ease of use, then identified which features matter most for a beginner-friendly tool for small business owners.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section id="about">
+    <div class="container about-grid">
+      <div>
+        <div class="eyebrow">About</div>
+        <h2>Beyond the lab</h2>
+        <p>
+          My work centers on how people interact with systems: digital interfaces, wearable sensors,
+          and how physical spaces are organized. I'm currently a Robotics Data Operations Expert at Meta,
+          a research assistant in UW's Human and Systems Lab, and president of UW's chapter of the Human
+          Factors and Ergonomics Society.
+        </p>
+        <p>
+          Outside of engineering, I've played violin in solo and ensemble settings for 20 years. At UW I've
+          performed with chamber groups, the UW Symphony Orchestra, Campus Philharmonia Orchestra, and the
+          student organization Music for Charity.
+          <!-- Replace # with a link to your performances (YouTube, Instagram, etc.) -->
+          <a href="#">You can see some of my performances here!</a>
+        </p>
+        <p>
+          I also foster dogs.
+          <!-- Replace # with a link to photos of your foster dogs -->
+          <a href="#">Meet them here.</a>
+        </p>
+      </div>
+      <div class="panel">
+        <h3>Education</h3>
+        <p><strong>M.S., Industrial Engineering</strong><br>
+          <span class="muted">University of Washington · 2025 – 2027</span></p>
+        <p><strong>B.S., Industrial &amp; Systems Engineering</strong>, Data Science concentration<br>
+          <span class="muted">University of Washington · 2021 – 2025</span></p>
+        <h3 style="margin-top:1.4em">Recognition</h3>
+        <ul>
+          <li>1st place, UW ISE Capstone Competition (2025)</li>
+          <li>2nd place, UW Disney Case Study Competition (2026)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <span>© <span id="year">2026</span> Elizabeth A. Higgins</span>
+    <span>
+      <a href="mailto:elh37@uw.edu">elh37@uw.edu</a> ·
+      <a href="https://www.linkedin.com/in/elizabethahiggins" target="_blank" rel="noopener">LinkedIn</a>
+    </span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
